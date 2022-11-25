@@ -1,0 +1,15 @@
+.contact-table_wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+th.MuiTableCell-head {
+  background: #000 !important;
+  color: #fff !important;
+
+  &:not(:last-of-type) {
+    border-right: 2px solid white;
+  }
+}

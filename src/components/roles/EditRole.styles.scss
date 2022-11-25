@@ -1,0 +1,15 @@
+.edit-role {
+  &_container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-form_input {
+    width: 30vw;
+    margin: 1.5rem 0 !important;
+  }
+}

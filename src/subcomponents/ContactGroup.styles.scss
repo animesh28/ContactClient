@@ -1,0 +1,60 @@
+.contact-group {
+  &_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .create-list {
+      position: fixed;
+      top: 15vh;
+      right: 3vw;
+    }
+  }
+
+  &_item {
+    margin: 1.5rem 0;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    & span {
+      margin: 0 15px;
+    }
+  }
+
+  &_name {
+    min-width: 20vw;
+  }
+
+  &_count {
+    min-width: 10vw;
+  }
+
+  &_link {
+    border: 2px solid transparent;
+    padding: 8px 12px;
+    border-radius: 15px;
+    color: #fff;
+    background: #1976d2;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-left: 25px;
+    margin-right: 2rem;
+
+    &:hover {
+      border: 2px solid #1976d2;
+      background: #fff;
+      color: #1976d2;
+    }
+  }
+}
+
+.deleted-item {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}

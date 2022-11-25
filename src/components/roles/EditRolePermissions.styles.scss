@@ -1,0 +1,23 @@
+.edit-role-permissions {
+  &_container {
+    height: auto;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_form {
+    &-input.MuiTextField-root {
+      min-width: 400px !important;
+      margin: 2rem 0;
+    }
+
+    &-btn {
+      margin-top: 1.2rem !important;
+    }
+  }
+}

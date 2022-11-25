@@ -1,0 +1,46 @@
+.role {
+  &_container {
+    width: 100%;
+    margin-top: 10vh;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_item {
+    margin: 2rem 5rem;
+    min-width: 30vw;
+    & &-name {
+      margin-bottom: 1rem;
+    }
+
+    & &-action {
+      margin: 1rem 0;
+      width: fit-content;
+      cursor: pointer;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        & p {
+          margin-left: 0.6rem;
+        }
+      }
+    }
+  }
+}
+
+.deleted-item {
+  text-decoration: line-through;
+  opacity: 0;
+
+  & .all-user_item-icons {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

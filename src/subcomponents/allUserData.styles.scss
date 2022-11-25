@@ -1,0 +1,37 @@
+.all-user {
+  padding: 5rem 0;
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+  &_item {
+    margin: 2rem;
+    min-width: 40vw;
+    padding: 1rem 1.5rem;
+    border-radius: 1.6rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    justify-content: space-between;
+
+    &-detail {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.deleted-item {
+  text-decoration: line-through;
+  opacity: 0;
+
+  & .all-user_item-icons {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

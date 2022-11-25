@@ -1,0 +1,28 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    & .MuiTextField-root {
+      margin: 0.8rem 0 !important;
+    }
+
+    & .MuiButton-root {
+      padding: 11px 16px;
+      border-radius: 16px;
+    }
+
+    &-group {
+      margin: 1.5rem 0 !important;
+    }
+  }
+}
+
+.form-submit-icon_btn {
+}
